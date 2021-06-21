@@ -1,8 +1,6 @@
-<h1>{{ title }}</h1>
-<button
-  type="button"
-  class="btn btn-danger"
-  tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
->
-  Simple demo
-</button>
+<app-nav></app-nav>
+<div class="container" style="margin-top: 100px">
+  <ul>
+    <li *ngFor="let user of users">{{ user.id }} - {{ user.userName }}</li>
+  </ul>
+</div>
